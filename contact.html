@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Website to contact page  Belinda Lapierre's form support,-->
+<!--Contact Page-->
+<html>
+
+    <head>
+        <title>HTML/CSS Spec Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+       <header class="mainhead">
+           <div class="mainsite">
+
+                <img src="balLogo.png" class="logo">
+            </div>
+            <div class="contact">
+                <a href="#"><i class="fa fa-phone" style="font-size:16px;color:red"></i> +1 (239) 123-4567</a>
+                <div class="sm2">
+                    <a href='https://facebook.com'><i class="fa fa-facebook" style="font-size:16px;color:#4267B2"></i></a>
+                    <a href='https://twitter.com'><i class="fa fa-twitter" style="font-size:16px;color:#1DA1F2"></i></a>
+                    <a href="" style="background: red;"><i class="fa fa-share" style="font-size:16px;color:white"></i></a>
+               </div>
+            </div>
+
+        </header>
+       <div>
+           <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="eligibility.html">Eligibility</a></li>
+           </ul>
+       </div>
+       <div class="page">
+        <div class="mheading">
+            <h1>IMMIGRATION FORMS</h1>
+        </div>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Contact <Details></Details></legend>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+                <div>
+                    <label for="role">Forms Needed</label>
+                    <select id="role" name ="user_role_name">
+                        <option value="admin">Renew Work Permit</option>
+                        <option value="user">Renew Green Card</option>
+                        <option value="guest">Remove Green Card 2-Year Condition</option>
+                        <option value="guest">Renew TPS</option>
+                        <option value="guest">Renew DACA
+                        <option value="guest">Renew TPS</option>
+                        <option value="guest">Apply for Citizenship</option>
+                        <option value="guest">Forms with Fee Waiver</option>
+                        <option value="guest">Translations</option>
+                        <option value="guest">Other</option>
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" id="videos" name="videos" value="Video_Guides">
+                    <label for="videos"> Video Guides</label>
+                    <input type="checkbox" id="fill_form" name="fill_form" value="Fill_Form">
+                    <label for="fill_form"> Fill forms Alone</label>
+                    <input type="checkbox" id="prepare" name="prepare" value="Prepare">
+                    <label for="prepare"> Prepare forms for you</label>
+                </div>
+                <div>
+                    <label for="bio">Brief description</label>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit Request</button>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+       <footer>
+           <div class="fimage">
+               <img src="balLogo.png" class="logo">
+           </div>
+           <div>
+            <ul class="fmenu">
+                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="service.html">About Us</a></li>
+                <li><a href="questions.html">FAQs</a></li>
+
+            </ul>
+           </div>
+       </footer>
+    </body>
+</html>

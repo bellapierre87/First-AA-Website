@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--Website to contact page  Belinda Lapierre's form support,-->
+<!--Page 2
+Navigation Bar linking to all 4 pages
+HTML form with a minimum of:
+1 fieldset
+3 inputs
+2 text
+1 checkbox
+1 textarea
+Appropriate labels for the above
+1 button-->
+<html>
+
+    <head>
+        <title>HTML/CSS Spec Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+       <header class="mainhead">
+           <div class="mainsite">
+
+                <img src="balLogo.png" class="logo">
+            </div>
+            <div class="contact">
+                <a href="#"><i class="fa fa-phone" style="font-size:16px;color:red"></i> +1 (239) 123-4567</a>
+                <div class="sm2">
+                    <a href='https://facebook.com'><i class="fa fa-facebook" style="font-size:16px;color:#4267B2"></i></a>
+                    <a href='https://twitter.com'><i class="fa fa-twitter" style="font-size:16px;color:#1DA1F2"></i></a>
+                    <a href="" style="background: red;"><i class="fa fa-share" style="font-size:16px;color:white"></i></a>
+               </div>
+            </div>
+
+        </header>
+       <div>
+           <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="eligibility.html">Eligibility</a></li>
+           </ul>
+       </div>
+       <div class="page">
+        <div class="mheading">
+            <h1>IMMIGRATION FORMS</h1>
+        </div>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Form Type</legend>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+                <div>
+                    <label for="role">Role</label>
+                    <select id="role" name ="user_role_name">
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="expiration">Expiration</label>
+                    <input type="date" id="expiration" name="expiration">
+                </div>
+                <div>
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Add this person</button>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+       <footer>
+           <div class="fimage">
+               <img src="balLogo.png" class="logo">
+           </div>
+           <div>
+            <ul class="fmenu">
+                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="service.html">About Us</a></li>
+                <li><a href="questions.html">FAQs</a></li>
+
+            </ul>
+           </div>
+       </footer>
+    </body>
+</html>
