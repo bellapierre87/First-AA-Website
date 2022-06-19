@@ -40,49 +40,50 @@
         </div>
 
         <form action="/form-handling-url" method="post">
-            <fieldset>
-                <legend>Contact <Details></Details></legend>
-                <div>
+            <fieldset class="form_input">
+                <legend>Contact Us</legend>
+                <div class="inp_label">
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName" name="first_name">
                 </div>
-                <div>
+                <div class="inp_label">
                     <label for="lastName">Last Name</label>
                     <input type="text" id="lastName" name="last_name">
                 </div>
-                <div>
+                <div class="inp_label">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email_address">
                 </div>
-                <div>
-                    <label for="role">Forms Needed</label>
-                    <select id="role" name ="user_role_name">
-                        <option value="admin">Renew Work Permit</option>
-                        <option value="user">Renew Green Card</option>
-                        <option value="guest">Remove Green Card 2-Year Condition</option>
-                        <option value="guest">Renew TPS</option>
-                        <option value="guest">Renew DACA
-                        <option value="guest">Renew TPS</option>
-                        <option value="guest">Apply for Citizenship</option>
-                        <option value="guest">Forms with Fee Waiver</option>
-                        <option value="guest">Translations</option>
-                        <option value="guest">Other</option>
-                        </option>
+                <div class="inp_label">
+                    <label for=form_type">Forms Needed</label>
+                    <select id="form_type" name ="user_form_type">
+                        <option>Select type</option>
+                        <option value="forms">Renew Work Permit</option>
+                        <option value="forms">Renew Green Card</option>
+                        <option value="forms">Remove Green Card 2-Year Condition</option>
+                        <option value="forms">Renew TPS</option>
+                        <option value="forms">Renew DACA
+                        <option value="forms">Renew TPS</option>
+                        <option value="forms">Apply for Citizenship</option>
+                        <option value="forms">Forms with Fee Waiver</option>
+                        <option value="forms">Translations</option>
+                        <option value="forms">Other</option>
+
                     </select>
                 </div>
-                <div>
+                <div class="inp_label">
                     <input type="checkbox" id="videos" name="videos" value="Video_Guides">
-                    <label for="videos"> Video Guides</label>
+                    <label for="videos"> Videos</label>
                     <input type="checkbox" id="fill_form" name="fill_form" value="Fill_Form">
-                    <label for="fill_form"> Fill forms Alone</label>
+                    <label for="fill_form"> Forms</label>
                     <input type="checkbox" id="prepare" name="prepare" value="Prepare">
-                    <label for="prepare"> Prepare forms for you</label>
+                    <label for="prepare"> Prepare</label>
                 </div>
                 <div>
                     <label for="bio">Brief description</label>
                     <textarea id="bio" name="bio"></textarea>
                 </div>
-                <div>
+                <div class="submit">
                     <button type="submit">Submit Request</button>
                 </div>
 
